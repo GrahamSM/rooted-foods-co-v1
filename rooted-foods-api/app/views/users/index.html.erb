@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Shipping address</th>
+      <th>Shipping city</th>
+      <th>Shipping province</th>
+      <th>Shipping country</th>
+      <th>Shipping postal code</th>
+      <th>Billing address</th>
+      <th>Billing city</th>
+      <th>Billing province</th>
+      <th>Billing country</th>
+      <th>Billing postal code</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Password digest</th>
+      <th>Admin</th>
+      <th>Username</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.first_name %></td>
+        <td><%= user.last_name %></td>
+        <td><%= user.shipping_address %></td>
+        <td><%= user.shipping_city %></td>
+        <td><%= user.shipping_province %></td>
+        <td><%= user.shipping_country %></td>
+        <td><%= user.shipping_postal_code %></td>
+        <td><%= user.billing_address %></td>
+        <td><%= user.billing_city %></td>
+        <td><%= user.billing_province %></td>
+        <td><%= user.billing_country %></td>
+        <td><%= user.billing_postal_code %></td>
+        <td><%= user.email %></td>
+        <td><%= user.phone %></td>
+        <td><%= user.password_digest %></td>
+        <td><%= user.admin %></td>
+        <td><%= user.username %></td>
+        <td><%= link_to 'Show', user %></td>
+        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User', new_user_path %>

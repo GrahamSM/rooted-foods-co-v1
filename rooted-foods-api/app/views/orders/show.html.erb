@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @order.user_id %>
+</p>
+
+<p>
+  <strong>Recurring:</strong>
+  <%= @order.recurring %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @order.active %>
+</p>
+
+<p>
+  <strong>Transaction:</strong>
+  <%= @order.transaction_id %>
+</p>
+
+<p>
+  <strong>Completed:</strong>
+  <%= @order.completed %>
+</p>
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>

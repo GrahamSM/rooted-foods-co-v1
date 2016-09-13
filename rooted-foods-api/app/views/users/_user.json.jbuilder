@@ -1,0 +1,2 @@
+json.extract! user, :id, :first_name, :last_name, :shipping_address, :shipping_city, :shipping_province, :shipping_country, :shipping_postal_code, :billing_address, :billing_city, :billing_province, :billing_country, :billing_postal_code, :email, :phone, :password_digest, :admin, :username, :created_at, :updated_at
+json.url user_url(user, format: :json)

@@ -1,0 +1,89 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @user.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @user.last_name %>
+</p>
+
+<p>
+  <strong>Shipping address:</strong>
+  <%= @user.shipping_address %>
+</p>
+
+<p>
+  <strong>Shipping city:</strong>
+  <%= @user.shipping_city %>
+</p>
+
+<p>
+  <strong>Shipping province:</strong>
+  <%= @user.shipping_province %>
+</p>
+
+<p>
+  <strong>Shipping country:</strong>
+  <%= @user.shipping_country %>
+</p>
+
+<p>
+  <strong>Shipping postal code:</strong>
+  <%= @user.shipping_postal_code %>
+</p>
+
+<p>
+  <strong>Billing address:</strong>
+  <%= @user.billing_address %>
+</p>
+
+<p>
+  <strong>Billing city:</strong>
+  <%= @user.billing_city %>
+</p>
+
+<p>
+  <strong>Billing province:</strong>
+  <%= @user.billing_province %>
+</p>
+
+<p>
+  <strong>Billing country:</strong>
+  <%= @user.billing_country %>
+</p>
+
+<p>
+  <strong>Billing postal code:</strong>
+  <%= @user.billing_postal_code %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @user.phone %>
+</p>
+
+<p>
+  <strong>Password digest:</strong>
+  <%= @user.password_digest %>
+</p>
+
+<p>
+  <strong>Admin:</strong>
+  <%= @user.admin %>
+</p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @user.username %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

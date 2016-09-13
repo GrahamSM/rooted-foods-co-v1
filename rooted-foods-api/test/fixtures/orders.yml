@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  recurring: false
+  active: false
+  transaction_id: 1
+  completed: false
+
+two:
+  user_id: 1
+  recurring: false
+  active: false
+  transaction_id: 1
+  completed: false

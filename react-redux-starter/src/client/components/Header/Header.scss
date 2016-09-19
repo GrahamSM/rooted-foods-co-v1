@@ -1,0 +1,25 @@
+.header-body{
+  border: 1px solid black;
+  display: flex;
+  height: 129px;
+  margin: 0;
+  padding: 0;
+}
+
+.left-header{
+  width: 45%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+.middle-header{
+  width: 10%;
+  height:100%;
+  border: 1px solid black;
+}
+
+.right-header{
+  width: 45%;
+  height: 100%;
+  border: 1px solid black;
+}

@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router';
+import Header from './Header/Header.js'
 
 const Main = React.createClass({
   render(){
     return (
       <div>
-        <h1>Hello, World</h1>
+        <Header/>
         {React.cloneElement(this.props.children, this.props)}
       </div>
     )

@@ -4,7 +4,7 @@ import { render } from 'react-dom';
 
 // Import components
 import App from './client/components/App';
-import FirstChild from './client/components/FirstChild/FirstChild';
+import PageBody from './client/components/PageBody/PageBody';
 
 // Import react router deps
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
@@ -15,7 +15,7 @@ const router = (
   <Provider store={store}>
     <Router history={history}>
       <Route path='/' component={App}>
-        <IndexRoute component={FirstChild}></IndexRoute>
+        <IndexRoute component={PageBody}></IndexRoute>
       </Route>
     </Router>
   </Provider>

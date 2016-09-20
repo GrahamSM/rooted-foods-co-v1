@@ -11,7 +11,7 @@ export default class MidThird extends React.Component{
   render(){
     // TODO: Give each FilterBtn a click handler that renders relevant data
     return(
-      <div>
+      <div className='mid-third-header'>
       </div>
     )
   }

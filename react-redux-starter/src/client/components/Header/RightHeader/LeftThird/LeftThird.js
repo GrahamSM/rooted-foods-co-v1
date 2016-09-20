@@ -12,7 +12,7 @@ export default class LeftThird extends React.Component{
   render(){
     // TODO: Give each FilterBtn a click handler that renders relevant data
     return(
-      <div>
+      <div className='left-third-header'>
       </div>
     )
   }

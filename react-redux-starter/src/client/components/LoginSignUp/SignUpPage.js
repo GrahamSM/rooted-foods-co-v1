@@ -12,7 +12,6 @@ export default class SignUpPage extends React.Component {
       let password = document.getElementById('password').value;
       let email = document.getElementById('email').value;
       let user = {username, password, email}
-      debugger;
       Reqwest({
           url: "http://localhost:3000/users",
           type: "json",

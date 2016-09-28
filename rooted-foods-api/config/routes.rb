@@ -1,4 +1,32 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
+
+  root :to => "sessions#login"
+  get "signup", :to => "users#new"
+  get "login", :to => "sessions#login"
+  get "logout", :to => "sessions#logout"
+  get "home", :to => "sessions#home"
+  get "profile", :to => "sessions#profile"
+  get "setting", :to => "sessions#setting"
+
+  # get 'sessions/login,'
+
+  # get 'sessions/home,'
+
+  # get 'sessions/profile,'
+
+  # get 'sessions/setting'
+
+  # resources :users
+  # resources :sales
+  # resources :products
+  # resources :orders
+  # resources :order_items
+  # resources :categories
+  # resources :bundles
+  # resources :api_keys
+  
+=======
   resources :locations
   resources :users
   resources :sales
@@ -8,6 +36,7 @@ Rails.application.routes.draw do
   resources :categories
   resources :bundles
   resources :api_keys
+>>>>>>> 5186e9989f02d5b2767797962b2c8903334292d1
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

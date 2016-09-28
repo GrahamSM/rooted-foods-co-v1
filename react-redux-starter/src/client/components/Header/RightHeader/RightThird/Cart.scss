@@ -1,0 +1,13 @@
+.cart-btn{
+  width: 150px;
+  border: 1px solid black;
+  background: white;
+  margin-left: 10px;
+  // TODO: CENTER CART BUTTON
+  &:hover{
+    border: 1px solid white;
+    color: white;
+    background: black;
+    cursor: pointer;
+  }
+}

@@ -11,7 +11,20 @@ export default class SignUpPage extends React.Component {
       let username = document.getElementById('username').value;
       let password = document.getElementById('password').value;
       let email = document.getElementById('email').value;
-      // TODO: Set items in redux store
+      let user = {username, password, email}
+      debugger;
+      Reqwest({
+          url: "http://localhost:3000/users",
+          type: "json",
+          method: "post",
+          contentType: 'application/json',
+          header: new Headers(),
+          data: JSON.stringify(user),
+          success: (response) => {
+          },
+          error: function(response) {
+          }
+      })
     }
 
     render(){

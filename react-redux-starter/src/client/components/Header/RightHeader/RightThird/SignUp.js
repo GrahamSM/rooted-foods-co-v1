@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router';
 import styles from './SignUp.scss';
 
-const SignUp = React.createClass({
+export default class SignUp extends React.Component{
+  constructor(){
+    super();
+  }
+
   render(){
     return (
       <div>
@@ -10,6 +14,4 @@ const SignUp = React.createClass({
       </div>
     )
   }
-});
-
-export default SignUp;
+};

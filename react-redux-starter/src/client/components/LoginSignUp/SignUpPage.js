@@ -5,6 +5,9 @@ import Reqwest from 'reqwest';
 import styles from './SignUpPage.scss';
 
 export default class SignUpPage extends React.Component {
+    static contextTypes = {
+        router: React.PropTypes.object.isRequired
+    }
 
     handleSubmit = (e) =>{
       e.preventDefault();
@@ -21,6 +24,7 @@ export default class SignUpPage extends React.Component {
           header: new Headers(),
           data: JSON.stringify(user),
           success: (response) => {
+            this.context.router.push('/');
           },
           error: function(response) {
           }

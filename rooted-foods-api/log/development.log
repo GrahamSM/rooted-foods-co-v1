@@ -5550,3 +5550,93 @@ Completed 200 OK in 99ms (Views: 0.1ms | ActiveRecord: 9.3ms)
   [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users"[0m
   [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
   [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+
+
+Started POST "/users" for ::1 at 2016-09-29 20:52:48 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"GrahamSM", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "email"=>"graham.sm94@gmail.com", "user"=>{"email"=>"graham.sm94@gmail.com", "username"=>"GrahamSM"}}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "GrahamSM"], ["email", "graham.sm94@gmail.com"], ["password_digest", "$2a$10$enzaGuRGQhaLvBTVEp9my..Lu3AxXE6wUtvLeWnQekE/9hRZFbxEy"], ["created_at", "2016-09-30 00:52:48.929670"], ["updated_at", "2016-09-30 00:52:48.929670"]]
+  [1m[35m (6.0ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 101ms (Views: 0.1ms | ActiveRecord: 9.6ms)
+
+
+Started POST "/users" for ::1 at 2016-09-30 00:52:24 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (7.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"GrahamSM", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "email"=>"graham.sm94@gmail.com", "user"=>{"email"=>"graham.sm94@gmail.com", "username"=>"GrahamSM"}}
+  [1m[35m (1.2ms)[0m  BEGIN
+  [1m[36mSQL (26.0ms)[0m  [1mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "GrahamSM"], ["email", "graham.sm94@gmail.com"], ["password_digest", "$2a$10$H3.wPwgaGdkGAahHpnZMAeYjTpcTLMDO1Z.XzzTIr3u3c61LUJzry"], ["created_at", "2016-09-30 04:52:24.914947"], ["updated_at", "2016-09-30 04:52:24.914947"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 126ms (Views: 0.1ms | ActiveRecord: 44.2ms)
+
+
+Started POST "/users" for ::1 at 2016-09-30 00:52:36 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"GrahamSM", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "email"=>"graham.sm94@gmail.com", "user"=>{"email"=>"graham.sm94@gmail.com", "username"=>"GrahamSM"}}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["username", "GrahamSM"], ["email", "graham.sm94@gmail.com"], ["password_digest", "$2a$10$K7a.Cf2Sdkedtw4eAar21.HwDikzt50.ZMAdFD1GZRLagao/AYpaq"], ["created_at", "2016-09-30 04:52:36.818675"], ["updated_at", "2016-09-30 04:52:36.818675"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 6912ms (Views: 0.1ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/users" for ::1 at 2016-09-30 00:53:06 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"GrahamSM", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "email"=>"graham.sm94@gmail.com", "user"=>{"email"=>"graham.sm94@gmail.com", "username"=>"GrahamSM"}}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "GrahamSM"], ["email", "graham.sm94@gmail.com"], ["password_digest", "$2a$10$zbiKhqGiikxdWbwS60lJReBvHRqDctOiHba6jh0bzHyc6ycIGlqJW"], ["created_at", "2016-09-30 04:53:06.424859"], ["updated_at", "2016-09-30 04:53:06.424859"]]
+  [1m[35m (1.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Completed 200 OK in 83ms (Views: 0.1ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/users" for ::1 at 2016-09-30 00:53:08 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"GrahamSM", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "email"=>"graham.sm94@gmail.com", "user"=>{"email"=>"graham.sm94@gmail.com", "username"=>"GrahamSM"}}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["username", "GrahamSM"], ["email", "graham.sm94@gmail.com"], ["password_digest", "$2a$10$wCMp5zZ/VW6thWMfDM1FdOTJO6tWhnuaYXRNq8.I0knBeu06dhVqG"], ["created_at", "2016-09-30 04:53:08.520639"], ["updated_at", "2016-09-30 04:53:08.520639"]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 70ms (Views: 0.1ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/users" for ::1 at 2016-09-30 00:53:12 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"GrahamSM", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "email"=>"graham.sm94@gmail.com", "user"=>{"email"=>"graham.sm94@gmail.com", "username"=>"GrahamSM"}}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "GrahamSM"], ["email", "graham.sm94@gmail.com"], ["password_digest", "$2a$10$665yMAp0UYWEg892QxaDh.5/lmAJq5FPOEf3m8U2f7L2TZhncAcKC"], ["created_at", "2016-09-30 04:53:12.088791"], ["updated_at", "2016-09-30 04:53:12.088791"]]
+  [1m[35m (1.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Completed 200 OK in 70ms (Views: 0.1ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/users" for ::1 at 2016-09-30 00:53:19 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"GrahamSM", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "email"=>"graham.sm94@gmail.com", "user"=>{"email"=>"graham.sm94@gmail.com", "username"=>"GrahamSM"}}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["username", "GrahamSM"], ["email", "graham.sm94@gmail.com"], ["password_digest", "$2a$10$UXqx.mlLNdaw5d7GmOadoOf8K.eL7ElFUZpYpjanH5eDFd5fCcKkG"], ["created_at", "2016-09-30 04:53:19.453825"], ["updated_at", "2016-09-30 04:53:19.453825"]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 69ms (Views: 0.1ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/users" for ::1 at 2016-09-30 00:55:50 -0400
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"GrahamSM", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "email"=>"graham.sm94@gmail.com", "user"=>{"email"=>"graham.sm94@gmail.com", "username"=>"GrahamSM"}}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "GrahamSM"], ["email", "graham.sm94@gmail.com"], ["password_digest", "$2a$10$9LVui8/DNuYIvLJviyqdHueI6QCtddEQFVNtQWIUuSHAmcJ917MFS"], ["created_at", "2016-09-30 04:55:50.651611"], ["updated_at", "2016-09-30 04:55:50.651611"]]
+  [1m[35m (1.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Completed 200 OK in 80ms (Views: 0.1ms | ActiveRecord: 3.7ms)

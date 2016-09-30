@@ -10,8 +10,9 @@ export default class SignUpPage extends React.Component {
       e.preventDefault();
       let username = document.getElementById('username').value;
       let password = document.getElementById('password').value;
+      let password_confirmation = document.getElementById('confirm_password').value;
       let email = document.getElementById('email').value;
-      let user = {username, password, email}
+      let user = {username, password, password_confirmation, email}
       Reqwest({
           url: "http://localhost:3000/users",
           type: "json",
@@ -31,9 +32,10 @@ export default class SignUpPage extends React.Component {
         <div>
         <div className="form">
             <form className="register-form" onSubmit={this.handleSubmit.bind(this)}>
+              <input id="email" type="text" placeholder="email address"/>
               <input id="username" type="text" placeholder="username"/>
               <input id="password" type="password" placeholder="password"/>
-              <input id="email" type="text" placeholder="email address"/>
+              <input id="confirm_password" type="password" placeholder="confirm_password"/>
               <button>create</button>
               <p className="message">Already registered? <Link to={'/login'}>Login</Link></p>
             </form>

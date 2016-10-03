@@ -29,6 +29,14 @@ class UsersController < ApplicationController
     render json: {}, status: 200
   end
 
+  def get_current_user
+    if current_user
+      render json: {status: true}, status: 200
+    else
+      render json: {status: false}, status: 200
+    end
+  end
+
 
 
     protected

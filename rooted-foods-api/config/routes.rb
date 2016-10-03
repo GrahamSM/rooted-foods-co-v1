@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   root :to => "sessions#login"
 
+  get 'users/getcurrentuser' => 'users#get_current_user'
+
   resources :locations
   resources :api_keys
   resources :users, only: [:new, :create, :update, :edit, :index]

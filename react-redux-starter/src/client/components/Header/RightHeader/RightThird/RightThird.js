@@ -12,6 +12,8 @@ export default class RightThird extends React.Component{
       super();
   };
 
+  
+
   render(){
     // TODO: Give each FilterBtn a click handler that renders relevant data
     return(

@@ -9,6 +9,7 @@ export default class SignUpPage extends React.Component {
         router: React.PropTypes.object.isRequired
     }
 
+    //SHOULD BE IN ACTIONCREATORS, USE MIDDLEWARE FOR ASYNC CALL
     handleSubmit = (e) =>{
       e.preventDefault();
       let username = document.getElementById('username').value;

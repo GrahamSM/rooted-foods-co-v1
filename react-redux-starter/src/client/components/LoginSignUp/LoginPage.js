@@ -25,7 +25,8 @@ export default class LoginPage extends React.Component {
       )
     }
 
-    handleSubmit = (e) =>{
+    //SHOULDNT HAPPEN IN HERE SHOULD HAPPEN IN ACTIONS
+    handleSubmit = (e) => {
       e.preventDefault();
       let username_or_email = document.getElementById('username_or_email').value;
       let password = document.getElementById('password').value;
@@ -39,7 +40,7 @@ export default class LoginPage extends React.Component {
           data: JSON.stringify(user_info),
           success: (response) => {
             this.context.router.push('/');
-            this.props.login_success.bind(null)
+            this.props.login_success.bind(null);
           },
           error: function(response) {
           }

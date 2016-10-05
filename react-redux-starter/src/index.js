@@ -14,6 +14,7 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import { Provider } from 'react-redux';
 import store, { history } from './client/store';
 
+///MAYBE SET UP PAGE BODY AS YOUR DASHBOARD, WITH HEADER RIGHT ABOVE IT?
 const router = (
   <Provider store={store}>
     <Router history={history}>

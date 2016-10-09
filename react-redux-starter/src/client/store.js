@@ -9,7 +9,7 @@ import thunk from 'redux-thunk';
 //Import the root reducer
 import rootReducer from './reducers/index';
 
-const store = createStore(rootReducer, applyMiddleware(thunk), window.devToolsExtension && window.devToolsExtension());
+const store = createStore(rootReducer, compose(applyMiddleware(thunk), window.devToolsExtension && window.devToolsExtension()));
 
 export const history = syncHistoryWithStore(
   browserHistory, store);

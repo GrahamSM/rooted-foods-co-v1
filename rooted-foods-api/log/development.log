@@ -6955,3 +6955,58 @@ Started GET "/users/getcurrentuser" for ::1 at 2016-10-09 17:43:12 -0400
 Processing by UsersController#get_current_user as JSON
   Parameters: {"user"=>{}}
 Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/getcurrentuser" for ::1 at 2016-10-09 17:45:16 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#get_current_user as JSON
+  Parameters: {"user"=>{}}
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/getcurrentuser" for ::1 at 2016-10-09 17:45:20 -0400
+Processing by UsersController#get_current_user as JSON
+  Parameters: {"user"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/getcurrentuser" for ::1 at 2016-10-09 17:46:00 -0400
+Processing by UsersController#get_current_user as JSON
+  Parameters: {"user"=>{}}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/getcurrentuser" for ::1 at 2016-10-09 17:46:16 -0400
+Processing by UsersController#get_current_user as JSON
+  Parameters: {"user"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/getcurrentuser" for ::1 at 2016-10-09 17:46:36 -0400
+Processing by UsersController#get_current_user as JSON
+  Parameters: {"user"=>{}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/getcurrentuser" for ::1 at 2016-10-09 17:47:37 -0400
+Processing by UsersController#get_current_user as JSON
+  Parameters: {"user"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/getcurrentuser" for ::1 at 2016-10-09 17:48:16 -0400
+Processing by UsersController#get_current_user as JSON
+  Parameters: {"user"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/getcurrentuser" for ::1 at 2016-10-09 17:48:37 -0400
+Processing by UsersController#get_current_user as JSON
+  Parameters: {"user"=>{}}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/getcurrentuser" for ::1 at 2016-10-09 17:54:29 -0400
+Processing by UsersController#get_current_user as JSON
+  Parameters: {"user"=>{}}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms)

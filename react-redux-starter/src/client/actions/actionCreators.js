@@ -36,6 +36,7 @@ export function loginFailure (err) {
 }
 
 export function tryLogin (user_info){
+  debugger;
   return dispatch => {
     dispatch(loginAttempt(user_info));
     return Reqwest({

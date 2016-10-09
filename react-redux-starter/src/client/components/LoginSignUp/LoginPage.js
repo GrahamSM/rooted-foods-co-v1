@@ -26,8 +26,7 @@ export default class LoginPage extends React.Component {
       e.preventDefault();
       let username_or_email = document.getElementById('username_or_email').value;
       let password = document.getElementById('password').value;
-      let user_info = {username_or_email, password}
-      this.props.tryLogin.bind(null, user_info);
+      this.props.tryLogin({username_or_email, password});
     }
 
 }

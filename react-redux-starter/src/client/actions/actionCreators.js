@@ -26,7 +26,7 @@ export function loginAttempt(data){
   }
 }
 
-export function loginFailure (err) {
+export function loginFailure(err){
   return{
     type: 'USER_LOGIN_FAILED',
     payload: {
@@ -35,8 +35,7 @@ export function loginFailure (err) {
   }
 }
 
-export function tryLogin (user_info){
-  debugger;
+export function tryLogin(user_info){
   return dispatch => {
     dispatch(loginAttempt(user_info));
     return Reqwest({
@@ -52,7 +51,7 @@ export function tryLogin (user_info){
   }
 }
 
-export function trySignUp (user_info){
+export function trySignUp(user_info){
   return dispatch => {
     dispatch(loginAttempt(user_info));
     return Reqwest({
@@ -71,6 +70,3 @@ export function trySignUp (user_info){
     })
   }
 }
-
-
-///TODO: Fix w/ thunk middleware

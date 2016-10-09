@@ -1,3 +1,7 @@
+import Reqwest from 'reqwest';
+
+// TODO: USER FETCH
+
 export function login_success(){
   return{
     type: 'USER_LOGIN'
@@ -22,7 +26,7 @@ export function sign_up_failure (err){
 export function loginAttempt(data){
   return{
     type: 'USER_LOGIN_ATTEMPT',
-    payload: {...user_info}
+    payload: {...data}
   }
 }
 
@@ -60,7 +64,7 @@ export function trySignUp(user_info){
       method: "post",
       contentType: 'application/json',
       header: new Headers(),
-      data: JSON.stringify(user),
+      data: JSON.stringify(user_info),
       success: (response) => {
         dispatch(sign_up_success)
       },

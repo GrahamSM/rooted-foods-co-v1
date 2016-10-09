@@ -13,7 +13,7 @@ export default class SignUpPage extends React.Component {
       let password_confirmation = document.getElementById('confirm_password').value;
       let email = document.getElementById('email').value;
       let user = {username, password, password_confirmation, email}
-      this.props.trySignUp.bind(null, user);
+      this.props.trySignUp({username, password, password_confirmation, email, user});
     }
 
     render(){

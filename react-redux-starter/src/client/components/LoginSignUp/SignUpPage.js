@@ -1,15 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router';
 import Reqwest from 'reqwest';
-
 import styles from './SignUpPage.scss';
 
 export default class SignUpPage extends React.Component {
-    static contextTypes = {
-        router: React.PropTypes.object.isRequired
-    }
 
-    //SHOULD BE IN ACTIONCREATORS, USE MIDDLEWARE FOR ASYNC CALL
+    //TODO: SHOULD BE IN ACTIONCREATORS, USE MIDDLEWARE FOR ASYNC CALL
     handleSubmit = (e) =>{
       e.preventDefault();
       let username = document.getElementById('username').value;
@@ -17,19 +13,7 @@ export default class SignUpPage extends React.Component {
       let password_confirmation = document.getElementById('confirm_password').value;
       let email = document.getElementById('email').value;
       let user = {username, password, password_confirmation, email}
-      Reqwest({
-          url: "http://localhost:3000/users",
-          type: "json",
-          method: "post",
-          contentType: 'application/json',
-          header: new Headers(),
-          data: JSON.stringify(user),
-          success: (response) => {
-            this.context.router.push('/');
-          },
-          error: function(response) {
-          }
-      })
+      this.props.trySignUp.bind(null, user);
     }
 
     render(){

@@ -6828,3 +6828,130 @@ Processing by SessionsController#create as JSON
   [1m[35mUser Load (15.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT 1  [["email", "GrahamSM"]]
   [1m[36mUser Load (5.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT 1[0m  [["username", "GrahamSM"]]
 Completed 201 Created in 2715ms (Views: 0.1ms | ActiveRecord: 23.6ms)
+
+
+Started GET "/users/getcurrentuser" for ::1 at 2016-10-05 14:24:20 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (26.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#get_current_user as JSON
+  Parameters: {"user"=>{}}
+Completed 200 OK in 317888ms (Views: 0.7ms | ActiveRecord: 28.2ms)
+
+
+Started GET "/users/getcurrentuser" for ::1 at 2016-10-05 14:29:39 -0400
+Processing by UsersController#get_current_user as JSON
+  Parameters: {"user"=>{}}
+Completed 200 OK in 941ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/getcurrentuser" for ::1 at 2016-10-05 14:29:59 -0400
+Processing by UsersController#get_current_user as JSON
+  Parameters: {"user"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/getcurrentuser" for ::1 at 2016-10-05 14:30:27 -0400
+Processing by UsersController#get_current_user as JSON
+  Parameters: {"user"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/getcurrentuser" for ::1 at 2016-10-09 17:16:15 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (19.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#get_current_user as JSON
+  Parameters: {"user"=>{}}
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 21.8ms)
+
+
+Started GET "/rails/info" for ::1 at 2016-10-09 17:21:36 -0400
+Processing by Rails::InfoController#index as HTML
+Redirected to http://localhost:3000/rails/info/routes
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for ::1 at 2016-10-09 17:21:36 -0400
+Processing by Rails::InfoController#routes as HTML
+  Rendered /Users/GrahamSM/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Users/GrahamSM/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.9ms)
+  Rendered /Users/GrahamSM/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-4.2.6/lib/rails/templates/rails/info/routes.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 35ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/getcurrentuser" for ::1 at 2016-10-09 17:23:57 -0400
+Processing by UsersController#get_current_user as JSON
+  Parameters: {"user"=>{}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/getcurrentuser" for ::1 at 2016-10-09 17:24:53 -0400
+Processing by UsersController#get_current_user as JSON
+  Parameters: {"user"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/getcurrentuser" for ::1 at 2016-10-09 17:25:30 -0400
+Processing by UsersController#get_current_user as JSON
+  Parameters: {"user"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/getcurrentuser" for ::1 at 2016-10-09 17:25:44 -0400
+Processing by UsersController#get_current_user as JSON
+  Parameters: {"user"=>{}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/getcurrentuser" for ::1 at 2016-10-09 17:26:20 -0400
+Processing by UsersController#get_current_user as JSON
+  Parameters: {"user"=>{}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/getcurrentuser" for ::1 at 2016-10-09 17:28:11 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#get_current_user as JSON
+  Parameters: {"user"=>{}}
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/users/getcurrentuser" for ::1 at 2016-10-09 17:30:03 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#get_current_user as JSON
+  Parameters: {"user"=>{}}
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/getcurrentuser" for ::1 at 2016-10-09 17:36:59 -0400
+Processing by UsersController#get_current_user as JSON
+  Parameters: {"user"=>{}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/getcurrentuser" for ::1 at 2016-10-09 17:37:40 -0400
+Processing by UsersController#get_current_user as JSON
+  Parameters: {"user"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/getcurrentuser" for ::1 at 2016-10-09 17:39:14 -0400
+Processing by UsersController#get_current_user as JSON
+  Parameters: {"user"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/getcurrentuser" for ::1 at 2016-10-09 17:39:55 -0400
+Processing by UsersController#get_current_user as JSON
+  Parameters: {"user"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/getcurrentuser" for ::1 at 2016-10-09 17:41:01 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#get_current_user as JSON
+  Parameters: {"user"=>{}}
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/users/getcurrentuser" for ::1 at 2016-10-09 17:43:12 -0400
+Processing by UsersController#get_current_user as JSON
+  Parameters: {"user"=>{}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
